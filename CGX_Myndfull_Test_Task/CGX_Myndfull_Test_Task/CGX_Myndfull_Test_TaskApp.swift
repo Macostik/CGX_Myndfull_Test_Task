@@ -11,7 +11,9 @@ import SwiftUI
 struct CGX_Myndfull_Test_TaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {
+                TimerListView()
+            }
         }
     }
 }

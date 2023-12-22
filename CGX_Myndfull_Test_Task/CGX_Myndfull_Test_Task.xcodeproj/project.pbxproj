@@ -8,17 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		56036F872B35F26700A0A24D /* CGX_Myndfull_Test_TaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56036F862B35F26700A0A24D /* CGX_Myndfull_Test_TaskApp.swift */; };
-		56036F892B35F26700A0A24D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56036F882B35F26700A0A24D /* ContentView.swift */; };
+		56036F892B35F26700A0A24D /* TimerContantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56036F882B35F26700A0A24D /* TimerContantView.swift */; };
 		56036F8B2B35F26800A0A24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56036F8A2B35F26800A0A24D /* Assets.xcassets */; };
 		56036F8E2B35F26800A0A24D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56036F8D2B35F26800A0A24D /* Preview Assets.xcassets */; };
+		56D367612B35FCAE0035B924 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 56D367602B35FCAE0035B924 /* ComposableArchitecture */; };
+		56D367632B35FF3A0035B924 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D367622B35FF3A0035B924 /* Timer.swift */; };
+		56D367652B35FF810035B924 /* TimerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D367642B35FF810035B924 /* TimerList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56036F832B35F26700A0A24D /* CGX_Myndfull_Test_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGX_Myndfull_Test_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56036F862B35F26700A0A24D /* CGX_Myndfull_Test_TaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGX_Myndfull_Test_TaskApp.swift; sourceTree = "<group>"; };
-		56036F882B35F26700A0A24D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		56036F882B35F26700A0A24D /* TimerContantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContantView.swift; sourceTree = "<group>"; };
 		56036F8A2B35F26800A0A24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56036F8D2B35F26800A0A24D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		56D367622B35FF3A0035B924 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		56D367642B35FF810035B924 /* TimerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56D367612B35FCAE0035B924 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				56036F862B35F26700A0A24D /* CGX_Myndfull_Test_TaskApp.swift */,
-				56036F882B35F26700A0A24D /* ContentView.swift */,
+				56036F882B35F26700A0A24D /* TimerContantView.swift */,
+				56D367642B35FF810035B924 /* TimerList.swift */,
+				56D367622B35FF3A0035B924 /* Timer.swift */,
 				56036F8A2B35F26800A0A24D /* Assets.xcassets */,
 				56036F8C2B35F26800A0A24D /* Preview Content */,
 			);
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = CGX_Myndfull_Test_Task;
+			packageProductDependencies = (
+				56D367602B35FCAE0035B924 /* ComposableArchitecture */,
+			);
 			productName = CGX_Myndfull_Test_Task;
 			productReference = 56036F832B35F26700A0A24D /* CGX_Myndfull_Test_Task.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 56036F7A2B35F26700A0A24D;
+			packageReferences = (
+				56D3675F2B35FCAE0035B924 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 56036F842B35F26700A0A24D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56036F892B35F26700A0A24D /* ContentView.swift in Sources */,
+				56D367632B35FF3A0035B924 /* Timer.swift in Sources */,
+				56036F892B35F26700A0A24D /* TimerContantView.swift in Sources */,
 				56036F872B35F26700A0A24D /* CGX_Myndfull_Test_TaskApp.swift in Sources */,
+				56D367652B35FF810035B924 /* TimerList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56D3675F2B35FCAE0035B924 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56D367602B35FCAE0035B924 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56D3675F2B35FCAE0035B924 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 56036F7B2B35F26700A0A24D /* Project object */;
 }
