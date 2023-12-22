@@ -11,10 +11,21 @@
 		56036F892B35F26700A0A24D /* TimerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56036F882B35F26700A0A24D /* TimerListView.swift */; };
 		56036F8B2B35F26800A0A24D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56036F8A2B35F26800A0A24D /* Assets.xcassets */; };
 		56036F8E2B35F26800A0A24D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56036F8D2B35F26800A0A24D /* Preview Assets.xcassets */; };
+		5608270E2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5608270D2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.swift */; };
 		56D367612B35FCAE0035B924 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 56D367602B35FCAE0035B924 /* ComposableArchitecture */; };
 		56D367632B35FF3A0035B924 /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D367622B35FF3A0035B924 /* Timer.swift */; };
 		56D367652B35FF810035B924 /* TimerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D367642B35FF810035B924 /* TimerList.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5608270F2B361ED200A46E87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56036F7B2B35F26700A0A24D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 56036F822B35F26700A0A24D;
+			remoteInfo = CGX_Myndfull_Test_Task;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		56036F832B35F26700A0A24D /* CGX_Myndfull_Test_Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGX_Myndfull_Test_Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +33,8 @@
 		56036F882B35F26700A0A24D /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
 		56036F8A2B35F26800A0A24D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56036F8D2B35F26800A0A24D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5608270B2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGX_Myndfull_Test_TaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5608270D2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGX_Myndfull_Test_TaskTests.swift; sourceTree = "<group>"; };
 		56D367622B35FF3A0035B924 /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		56D367642B35FF810035B924 /* TimerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +48,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		560827082B361ED200A46E87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				56036F852B35F26700A0A24D /* CGX_Myndfull_Test_Task */,
+				5608270C2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests */,
 				56036F842B35F26700A0A24D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				56036F832B35F26700A0A24D /* CGX_Myndfull_Test_Task.app */,
+				5608270B2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +97,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		5608270C2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				5608270D2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.swift */,
+			);
+			path = CGX_Myndfull_Test_TaskTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,6 +128,24 @@
 			productReference = 56036F832B35F26700A0A24D /* CGX_Myndfull_Test_Task.app */;
 			productType = "com.apple.product-type.application";
 		};
+		5608270A2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 560827112B361ED200A46E87 /* Build configuration list for PBXNativeTarget "CGX_Myndfull_Test_TaskTests" */;
+			buildPhases = (
+				560827072B361ED200A46E87 /* Sources */,
+				560827082B361ED200A46E87 /* Frameworks */,
+				560827092B361ED200A46E87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				560827102B361ED200A46E87 /* PBXTargetDependency */,
+			);
+			name = CGX_Myndfull_Test_TaskTests;
+			productName = CGX_Myndfull_Test_TaskTests;
+			productReference = 5608270B2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -110,6 +158,10 @@
 				TargetAttributes = {
 					56036F822B35F26700A0A24D = {
 						CreatedOnToolsVersion = 15.0.1;
+					};
+					5608270A2B361ED200A46E87 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 56036F822B35F26700A0A24D;
 					};
 				};
 			};
@@ -130,6 +182,7 @@
 			projectRoot = "";
 			targets = (
 				56036F822B35F26700A0A24D /* CGX_Myndfull_Test_Task */,
+				5608270A2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests */,
 			);
 		};
 /* End PBXProject section */
@@ -141,6 +194,13 @@
 			files = (
 				56036F8E2B35F26800A0A24D /* Preview Assets.xcassets in Resources */,
 				56036F8B2B35F26800A0A24D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560827092B361ED200A46E87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +218,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		560827072B361ED200A46E87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5608270E2B361ED200A46E87 /* CGX_Myndfull_Test_TaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		560827102B361ED200A46E87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 56036F822B35F26700A0A24D /* CGX_Myndfull_Test_Task */;
+			targetProxy = 5608270F2B361ED200A46E87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		56036F8F2B35F26800A0A24D /* Debug */ = {
@@ -338,6 +414,42 @@
 			};
 			name = Release;
 		};
+		560827122B361ED200A46E87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224SJKKLQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GYS.CGX-Myndfull-Test-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGX_Myndfull_Test_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CGX_Myndfull_Test_Task";
+			};
+			name = Debug;
+		};
+		560827132B361ED200A46E87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 224SJKKLQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.GYS.CGX-Myndfull-Test-TaskTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CGX_Myndfull_Test_Task.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CGX_Myndfull_Test_Task";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +467,15 @@
 			buildConfigurations = (
 				56036F922B35F26800A0A24D /* Debug */,
 				56036F932B35F26800A0A24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		560827112B361ED200A46E87 /* Build configuration list for PBXNativeTarget "CGX_Myndfull_Test_TaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				560827122B361ED200A46E87 /* Debug */,
+				560827132B361ED200A46E87 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
