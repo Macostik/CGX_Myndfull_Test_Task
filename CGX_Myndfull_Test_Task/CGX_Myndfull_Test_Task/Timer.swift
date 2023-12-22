@@ -56,14 +56,14 @@ struct TimerView: View {
     var store: StoreOf<Timer>
     var body: some View {
         WithViewStore(self.store, observe: { $0 }) { viewStore in
-            VStack {
-                Button("Start/Pause") {
+            VStack(spacing: 20) {
+                Button("Start / Pause") {
                     viewStore.send(.toggleTimerButtonTapped)
                 }
                 .padding()
                 .background(.gray)
-                .padding()
-                .buttonStyle(.plain)
+                .foregroundStyle(.white)
+                .clipShape(Capsule())
                 
                 Text("\(viewStore.percentage) %")
             }

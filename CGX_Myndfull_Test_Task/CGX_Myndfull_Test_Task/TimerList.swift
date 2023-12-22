@@ -12,11 +12,22 @@ import ComposableArchitecture
 @Reducer
 struct TimerList {
     // State of main reducer
+    enum TimerCase {
+        case timerA, timerB, timerC
+        
+        var name: String {
+            switch self {
+            case .timerA: return "Timer A"
+            case .timerB: return "Timer B"
+            case .timerC: return "Timer C"
+            }
+        }
+    }
     struct State: Equatable {
         // Create buttons
         struct TimerButton: Equatable, Identifiable {
             var id: UUID
-            var name: String
+            var timer: TimerCase
             var percentage: Int
             var maxValue: Int
         }
@@ -25,18 +36,23 @@ struct TimerList {
         //Setup timer model
         var timerButtonList: IdentifiedArrayOf<TimerButton> = [
             TimerButton(id: UUID(),
-                        name: "Timer A",
+                        timer: TimerCase.timerA,
                         percentage: 0,
                         maxValue: 60),
             TimerButton(id: UUID(),
-                        name: "Timer B",
+                        timer: TimerCase.timerB,
                         percentage: 0,
                         maxValue: 90),
             TimerButton(id: UUID(),
-                        name: "Timer C",
+                        timer: TimerCase.timerC,
                         percentage: 0,
                         maxValue: 120)
         ]
+        // Calculate darkness level
+        var darknessView: Double {
+            guard let percentage = timerButtonList.first?.percentage else { return 0 }
+            return percentage > 20 ? 0 : Double(percentage/100)
+        }
     }
     // Action of main reducer
     enum Action {
@@ -66,6 +82,7 @@ struct TimerList {
                    let percentage = selectedTimer.value?.percentage {
                     state.timerButtonList[id: selectedTimer.id]?.percentage = percentage
                 }
+                print(state.darknessView)
                 state.selectedTimer = nil
                 return .cancel(id: CancelID.timer)
                 

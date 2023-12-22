@@ -20,7 +20,7 @@ struct TimerListView: View {
             Form {
                 ForEach(viewStore.timerButtonList) { row in
                     NavigationLink(
-                        "\(row.name)    \(row.percentage)",
+                        "\(row.timer.name)    \(row.percentage)",
                         tag: row.id,
                         selection: viewStore.binding(
                             get: \.selectedTimer?.id,
@@ -29,12 +29,12 @@ struct TimerListView: View {
                     ) {
                         IfLetStore(self.store.scope(state: \.selectedTimer?.value, action: \.timer)) {
                             TimerView(store: $0)
-                        } 
-                        .navigationTitle("Timer List")
+                        }
                     }
                 }
             }
         }
+        .navigationTitle("Timer List")
     }
 }
     
@@ -48,7 +48,7 @@ struct TimerListView_Previews: PreviewProvider {
           initialState: TimerList.State(
             timerButtonList: [
                 TimerList.State.TimerButton(id: UUID(),
-                                            name: "Timer A",
+                                            timer: TimerList.TimerCase.timerA,
                                             percentage: 0,
                                             maxValue: 0)
             ]
